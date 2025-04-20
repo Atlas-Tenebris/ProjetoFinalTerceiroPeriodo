@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'register_pages/css/first_page.css' %}">
+
+</head>
+<body>
+    <nav class='register-nav'>
+        <a class= 'back-button' id='first-back-button' href="{% url 'main_page' %}"></a>
+    </nav>
+
+    <section id='first-leo-message' class='leo-message'>
+        <div id="message"></div>
+        <div id='advices-section'>
+            <ul ='advices' >
+                <li>Crie um nickname</li>
+                <li>Nos informe seu e-mail</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class='input-section' id='nickname-input'>
+        <img id='nickname-img' class='icon' src="{% static "register_pages/imgs/user.svg" %}" alt="user-generic-image">
+        <input class='first-page-input' type="text" placeholder='Digite seu Nickname'>
+    </div>
+
+    <div class='input-section', id='email-input'>
+        <img id='mail-img' class='icon' src="{% static "register_pages/imgs/mail.svg" %}" alt="gmail-img">
+        <input type="text" class='first-page-input' placeholder='Digite seu e-mail'>
+    </div>
+
+    <a id='next-page-button' class='button' href="{% url 'second_register_page' %}"></a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'register_pages/css/second_page.css'%}">
+</head>
+<body>
+    <nav class='register-nav'>
+        <a class= 'back-button' id='second-back-button' href="{% url 'first_register_page' %}"></a>
+    </nav>
+
+    <section id='second-leo-message' class='leo-message'>
+        <div id="message"></div>
+        <div id='advices-section'>
+            <ul ='advices' >
+                <li>Crie sua senha</li>
+                <li>Confirme sua senha</li>
+                <li>Informe sua data de nascimento</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class='input-section'>
+        <img class="icon" src="{%static 'register_pages/imgs/lock.svg'%}" alt="password-icon">
+        <input class='input' type= "password" id='password-creation' placeholder="Digite sua senha"></input>
+    </section>
+
+    <section class='input-section'>
+        <img class="icon" src="{%static 'register_pages/imgs/lock.svg'%}" alt="password-icon">
+        <input class='input' type= "password" id='password-confirmation' placeholder="Confirme sua senha"></input>
+    </section >
+    
+    <section class='input-section'>
+        <img class="icon" id="calendar-icon" src="{%static 'register_pages/imgs/calendar.svg'%}" alt="calendar-icon">
+        <input class='input' id="birthday" type= "date"></input>
+    </section>
+
+    <a id ="register-button"></a>
+</body>
+</html>

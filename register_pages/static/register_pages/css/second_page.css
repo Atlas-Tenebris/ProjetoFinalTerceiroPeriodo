@@ -1,0 +1,103 @@
+body{
+    background-image: url('../imgs/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.register-nav{
+    width: 100%;
+    height: 4em;
+    display: flex;
+}
+
+.back-button{
+    margin-top: 0.25em;
+    margin-left: 0.5em;
+    width: 3.8em;
+    height: 3.25em;
+    background-image: url('../imgs/Back-Button.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    border: 1px solid transparent;
+    border-radius: 20%;
+
+}
+
+.leo-message{
+    margin-top: 1.5em;
+    width: 100%;
+    height: 10.8em;
+    background-color: black;
+}
+
+
+#message{
+    width: 100%;
+    height: 5em;
+    background-image: url('../imgs/first-leo-advice.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#advices-section{
+    margin-top: 0.5em;
+    width: 100%;
+    height: 2em;
+    color: white;
+    font-size: 20px;
+    font-weight: bold
+}
+
+
+
+.input-section{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+}
+
+.icon{
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.input{
+    margin-top: 0.5em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 10.5em;
+    height: 2.8em;
+    line-height: 1;
+    box-sizing: border-box;
+    border: 0.45em solid rgba(255, 178, 12, 1);
+    box-shadow: -0.25em -0.4em 0px rgba(136, 100, 22, 1);
+    border-radius: 0.85em;
+    font-size: 25px;
+    margin-right: 0.25em;
+    margin-left: 0.5em;
+}
+
+#register-button{
+    margin-top: 4em;
+    width: 95%;
+    height: 7.7em;
+    background: url('../imgs/register-button.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
