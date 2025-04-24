@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'login_page/css/style.css' %}">
+
+</head>
+<body>
+    <nav class='login-nav'>
+        <a class= 'back-button' href="{% url 'main_page' %}"></a>
+    </nav>
+
+    <section id="leolibras-place">
+        <div id="leolibras-logo"></div>
+    </section>
+
+    <section id="inputs-section">
+
+        <div class="input-place">
+            <img src="{% static "login_page/imgs/user.svg" %}" alt="user-icon" id="user-icon" class="icon">
+            <input class="input" id="nickname-input" type="text" placeholder="Digite seu nickname"></input>
+        </div>
+
+        <div class="input-place" type="text" id="second-input-place">
+            <img src="{% static "login_page/imgs/lock.svg" %}" alt="password-icon" id="password-icon" class="icon">
+            <input class="input" id="password-input" type="password" placeholder="Digite sua senha"></input>
+        </div>
+    </section>
+
+    <button id="login-button"></button>
+</body>
+</html>

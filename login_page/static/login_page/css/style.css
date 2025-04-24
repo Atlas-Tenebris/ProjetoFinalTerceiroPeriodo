@@ -1,0 +1,116 @@
+body{
+    background-image: url('../imgs/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.login-nav{
+    width: 100%;
+    height: 4em;
+    display: flex;
+}
+
+.back-button{
+    margin-top: 0.25em;
+    margin-left: 0.5em;
+    width: 3.8em;
+    height: 3.25em;
+    background-image: url('../imgs/Back-Button.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    border: 1px solid transparent;
+    border-radius: 20%;
+}
+
+#leolibras-place{
+    width: 100%;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#leolibras-logo{
+    width: 98%;
+    height:7.5em;
+    background-image: url('../imgs/Leo\ libras\ 2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#inputs-section{
+    width: 100%;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-place{
+    width: 100%;
+    height: 8em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-input-place{
+    margin-top: 2.5em;
+}
+
+.icon{
+    width: 5em;
+    height:4.5em;
+}
+
+.input{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 11em;
+    height: 3em;
+    line-height: 1;
+    box-sizing: border-box;
+    border: 0.45em solid rgba(255, 178, 12, 1);
+    box-shadow: -0.25em -0.4em 0px rgba(136, 100, 22, 1);
+    border-radius: 0.85em;
+    margin-left: 0.5em;
+    margin-top: 0.45em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.input::placeholder{
+    color: #555555;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+
+}
+
+#login-button{
+    margin-top: 3em;
+    width: 24em;
+    height: 8em;
+    border: transparent;
+    background: url('../imgs/Login.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
